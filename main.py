@@ -450,7 +450,10 @@ def filter_finished(state: State) -> Page:
     content = [
         Header("Finished Books"),
         "You have finished " + str(len(finished_books)) + " books.",
-        Table(finished_books),
+        Table([
+            [book.author,book.title,book.pages,book.progress]
+            for book in finished_books
+        ]),
         Button("Back to All Books", "all_books"),
         Button("Back Home", "index")
     ]
@@ -511,7 +514,10 @@ def show_genre(state: State, genre: str) -> Page:
         Header(genre + " Books"),
         "Books in this genre: " + str(len(matching_books)) + "\n",
         "Finished books in this genre: " + str(finished_count),
-        Table(matching_books),
+        Table([
+            [book.author,book.title,book.pages,book.progress]
+            for book in matching_books
+        ]),
         Button("Choose Another Genre", "filter_genre"),
         Button("Back Home", "index")
     ]
