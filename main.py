@@ -422,7 +422,10 @@ def all_books(state: State) -> Page:
     """
     content = [
         Header("All My Books"),
-        Table(state.books),
+        Table([
+            [book.author,book.title,book.pages,book.progress]
+            for book in state.books
+        ]),
         Button("Add Another Book", "add_book"),
         Button("Back Home", "index")
     ]
