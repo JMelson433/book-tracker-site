@@ -1,6 +1,18 @@
 from drafter import *
 from dataclasses import dataclass
 
+set_website_title("Personal Book Tracker")
+set_site_information(
+    author = "Jill Melson", 
+    description = "Track one's reading, while providing easier organization and accessibility to further one's motivation. ",
+    sources = "Drafter documentation and the textbook.",
+    planning = ["Copy of CS1 Final Project 0_ Pick a Problem","Copy of CS1 Final Project 1_ Design"],
+    links =[""]
+)
+hide_debug_information()
+set_website_framed(False)
+    
+set_website_style("daub")
 
 GENRES = [
     "Fantasy",
