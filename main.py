@@ -7,7 +7,7 @@ set_site_information(
     description = "Track one's reading, while providing easier organization and accessibility to further one's motivation. ",
     sources = "Drafter documentation and the textbook.",
     planning = ["Copy of CS1 Final Project 0_ Pick a Problem","Copy of CS1 Final Project 1_ Design"],
-    links =[""]
+    links =["https://github.com/JMelson433/book-tracker-site"]
 )
 hide_debug_information()
 set_website_framed(False)
