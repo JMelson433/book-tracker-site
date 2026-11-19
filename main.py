@@ -6,7 +6,7 @@ set_site_information(
     author = "Jill Melson", 
     description = "Track one's reading, while providing easier organization and accessibility to further one's motivation. ",
     sources = "Drafter documentation and the textbook.",
-    planning = ["Copy of CS1 Final Project 0_ Pick a Problem","Copy of CS1 Final Project 1_ Design"],
+    planning = ["Copy of CS1 Final Project 0_ Pick a Problem.docx","Copy of CS1 Final Project 1_ Design.docx"],
     links =["https://github.com/JMelson433/book-tracker-site"]
 )
 hide_debug_information()
